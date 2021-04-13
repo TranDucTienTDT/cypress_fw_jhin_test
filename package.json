@@ -1,0 +1,19 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openRunner":"cypress open",
+    "testChrome": "cypress run --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "LeoTran"
+  },
+  "author": "LeoTran",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.0.1"
+  }
+}
