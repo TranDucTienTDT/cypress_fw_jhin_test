@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "openRunner":"cypress open",
-    "testChrome": "cypress run --browser chrome"
+    "open:runner":"cypress open",
+    "test:chrome": "cypress run --browser chrome"
   },
   "repository": {
     "type": "git",
