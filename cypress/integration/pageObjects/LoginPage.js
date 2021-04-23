@@ -1,5 +1,6 @@
 class LoginPage
 {
+    //page elements
     emailInput()
     {
         return cy.get('input[name="email"]')
@@ -43,6 +44,15 @@ class LoginPage
     passwordErrorMsg()
     {
         return cy.get('h6.MuiTypography-root.jss77.MuiTypography-subtitle2').last().children()
+    }
+
+    //page functions
+    login(email, password)
+    {
+        cy.visit('')
+        this.emailInput().type(email)
+        this.passwordInput().type(password)
+        this.loginBtn().click()
     }
 
 }
