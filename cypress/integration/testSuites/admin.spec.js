@@ -1,7 +1,7 @@
 import LoginAdminPage from '../pageObjects/admin/LoginAdminPage'
 import JobInterviewPage from '../pageObjects/admin/JobInterviewPage'
 
-describe('admin', ()=>{
+describe('admin', () => {
 
     const loginAdminPage = new LoginAdminPage()
     const jobInterviewPage = new JobInterviewPage()

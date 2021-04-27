@@ -1,8 +1,8 @@
 
-import LoginPage from '../pageObjects/LoginPage'
-import Header from '../pageObjects/Header'
-import SearchProjectsPage from '../pageObjects/SearchProjectsPage'
-import CreateProjectPopup from '../pageObjects/CreateProjectPopup'
+import LoginPage from '../pageObjects/tp/LoginPage'
+import Header from '../pageObjects/tp/Header'
+import SearchProjectsPage from '../pageObjects/tp/SearchProjectsPage'
+import CreateProjectPopup from '../pageObjects/tp/CreateProjectPopup'
 
 describe('Feature Search Projects', () => {
 

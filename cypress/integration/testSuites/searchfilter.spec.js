@@ -1,5 +1,5 @@
-import LoginPage from '../pageObjects/LoginPage'
-import SearchCVPage from '../pageObjects/SearchCVPage'
+import LoginPage from '../pageObjects/tp/LoginPage'
+import SearchCVPage from '../pageObjects/tp/SearchCVPage'
 
 describe('Checking search filter',()=>{
 

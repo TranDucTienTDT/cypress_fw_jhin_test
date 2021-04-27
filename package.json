@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:runner":"cypress open",
-    "cy:info":"cypress info",
+    "cy:runner": "cypress open",
+    "cy:info": "cypress info",
     "cy:chrome": "cypress run --browser chrome"
   },
   "repository": {
@@ -15,6 +15,6 @@
   "author": "LeoTran",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^7.0.1"
+    "cypress": "^7.2.0"
   }
 }
