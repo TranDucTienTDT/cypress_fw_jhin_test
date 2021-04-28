@@ -36,7 +36,7 @@ class PostJobPage
         return cy.get('div.select-input>div>div').contains('- Choose level -')
     }
 
-    chooseLevelDropdown()
+    chooseIndustryDropdown()
     {
         return cy.get('div.select-input>div>div').contains('- Choose industry -')
     }
@@ -61,12 +61,63 @@ class PostJobPage
         return cy.get('div.job-requirement>div>div>div.ql-editor')
     }
 
-    jobRequirementsTxt()
+    noteTxt()
     {
         return cy.get('div.job-requirement>div>div>div.ql-editor')
     }
 
+    othersBenefitChk()
+    {
+        return cy.get('span.text').contains('Others').prev()
+    }
+
+    enterJobKeywords()
+    {
+        return cy.get('div.job-keywords>div>input')
+    }
+
+    enterWorkingHour()
+    {
+        return cy.get('div.job-working-hour>div>input')
+    }
+    
+    salarySlider()
+    {
+        return cy.get('span.slider')
+    }
+
+    minSalaryTxt()
+    {
+        return cy.get('input[name="minSalary"]')
+    }
+
+    maxSalaryTxt()
+    {
+        return cy.get('input[name="maxSalary"]')
+    }
+
+    usdRadioBtn()
+    {
+        return cy.get('label[for="salary-usd"] span')
+    }
+
+    vndRadioBtn()
+    {
+        return cy.get('label[for="salary-vnd"] span')
+    }
+
+    chooseFileBtn()
+    {
+        return cy.get('div[class="choose-file"] div button[type="button"]')
+    } 
+
     //functions
+    getCheckBox(checkBoxName)
+    {
+        return cy.get('span.text').contains(checkBoxName).next()
+    }
+
+    
 
 }
 
