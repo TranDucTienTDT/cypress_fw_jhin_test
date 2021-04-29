@@ -1,6 +1,9 @@
 # cypress_fw_jhin_test
 1. Installing
-2. Run the testing
-3. Read report
-4. CI/CD
-5. Others
+- Clone from remote repository: `git clone https://github.com/TranDucTienTDT/cypress_fw_jhin_test.git`
+- Install all Dependencies `npm install`
+3. Run the testing
+- Open Cypress Runner: `npm run cy:runner`
+5. Read report
+6. CI/CD
+7. Others
