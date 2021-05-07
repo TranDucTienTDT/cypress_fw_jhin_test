@@ -1,8 +1,8 @@
 
-import LoginPage from '../pageObjects/tp/LoginPage'
-import Header from '../pageObjects/tp/Header'
-import SearchProjectsPage from '../pageObjects/tp/SearchProjectsPage'
-import CreateProjectPopup from '../pageObjects/tp/CreateProjectPopup'
+import LoginPage from '../../pageObjects/tp/LoginPage'
+import Header from '../../pageObjects/tp/Header'
+import SearchProjectsPage from '../../pageObjects/tp/SearchProjectsPage'
+import CreateProjectPopup from '../../pageObjects/tp/CreateProjectPopup'
 
 describe('Feature Search Projects', () => {
 
@@ -10,9 +10,10 @@ describe('Feature Search Projects', () => {
     const header = new Header()
     const searchProjectsPage = new SearchProjectsPage()
     const createProjectPopup = new CreateProjectPopup()
+    const user = require('../../fixtures/user.json')
 
     beforeEach(() => {
-        loginPage.login('tien.tran@jobhopin.com', 'tien123456')
+        loginPage.login(user.email, user.password)
     })
 
     it('Adding a new search project then checking it is existed', () => {
