@@ -10,7 +10,7 @@ describe('Feature Search Projects', () => {
     const header = new Header()
     const searchProjectsPage = new SearchProjectsPage()
     const createProjectPopup = new CreateProjectPopup()
-    const user = require('../../fixtures/user.json')
+    const user = require('../../../fixtures/user.json')
 
     beforeEach(() => {
         loginPage.login(user.email, user.password)
